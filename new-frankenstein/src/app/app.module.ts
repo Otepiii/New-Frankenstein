@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSortModule } from '@angular/material/sort';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,6 +29,7 @@ import { DialogExampleComponent } from './dialog-example/dialog-example.componen
     MatToolbarModule,
     MatDialogModule,
     MatButtonModule,
+    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
