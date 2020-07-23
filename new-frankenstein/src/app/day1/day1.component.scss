@@ -1,18 +1,27 @@
+@import "../../main-styles.scss";
+
 .day1 {
   width: 100%;
   height: 60vh;
   display: flex;
   position: absolute;
-  border: 2px solid rgb(172, 168, 168);
+  border: 3px ridge rgb(206, 206, 206);
+  border-radius: 10px;
   margin-bottom: 5px;
   justify-content: center;
   align-items: center;
+}
+
+.header1 mat-toolbar {
+  border-radius: 13px 13px 0 0;
+  background: linear-gradient(75deg, rgb(54, 191, 196), rgb(33, 95, 175));
 }
 
 .header1 .day1-title {
   margin: auto;
   font-size: 2rem;
   font-family: "Lato";
+  color: $dark;
 }
 
 .dialog {
