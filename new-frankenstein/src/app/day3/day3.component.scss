@@ -1,0 +1,43 @@
+@import "../../main-styles.scss";
+
+.day3 {
+  width: 100%;
+  height: 60vh;
+  border: 3px ridge rgb(206, 206, 206);
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-top: 9vh;
+}
+
+.header3 mat-toolbar {
+  padding: 0%;
+  margin-top: 0%;
+  border-radius: 8px 8px 0 0;
+  background: linear-gradient(75deg, #fbd72b, #f9484a);
+}
+
+.header3 .day3-title {
+  margin: auto;
+  font-size: 2rem;
+  font-family: "Lato";
+  color: $dark;
+}
+
+.table {
+  width: 95%;
+
+  margin: auto;
+}
+
+.amount {
+  margin-left: 3%;
+}
+
+.recipe-title {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 2rem;
+}

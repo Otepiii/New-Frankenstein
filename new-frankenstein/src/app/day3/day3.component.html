@@ -1,1 +1,57 @@
-<p>day3 works!</p>
+<div class="day3">
+  <div class="header3">
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <span class="day3-title">Day 3</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+  <br />
+  <div class="recipe-title">
+    Chicken Teriyaki Recipe<i
+      class="em em-poultry_leg"
+      aria-role="presentation"
+      aria-label="POULTRY LEG"
+    ></i>
+    <i class="em em-rice" aria-role="presentation" aria-label="COOKED RICE"></i>
+  </div>
+  <br />
+  <div class="table">
+    <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <!-- Position Column -->
+      <ng-container matColumnDef="position">
+        <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{ element.position }} </mat-cell>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{ element.name }} </mat-cell>
+      </ng-container>
+
+      <!-- Amount Column -->
+      <ng-container matColumnDef="amount">
+        <mat-header-cell *matHeaderCellDef> Amount </mat-header-cell>
+        <mat-cell *matCellDef="let element" class="amount">
+          {{ element.amount }}
+        </mat-cell>
+      </ng-container>
+
+      <!-- Unit Column -->
+      <ng-container matColumnDef="unit">
+        <mat-header-cell *matHeaderCellDef> Unit </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{ element.unit }} </mat-cell>
+      </ng-container>
+
+      <!-- Technique Column -->
+      <ng-container matColumnDef="technique">
+        <mat-header-cell *matHeaderCellDef> Technique </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{ element.technique }} </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+    </mat-table>
+  </div>
+</div>
