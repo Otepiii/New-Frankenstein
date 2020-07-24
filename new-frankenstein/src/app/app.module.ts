@@ -4,6 +4,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSortModule } from '@angular/material/sort';
+import { MatTableModule } from '@angular/material/table';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +12,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { Day1Component } from './day1/day1.component';
 import { Day2Component } from './day2/day2.component';
+import { Day3Component } from './day3/day3.component';
 import { DialogExampleComponent } from './dialog-example/dialog-example.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,7 @@ import { DialogExampleComponent } from './dialog-example/dialog-example.componen
     HeaderComponent,
     Day1Component,
     Day2Component,
+    Day3Component,
     DialogExampleComponent,
   ],
   entryComponents: [DialogExampleComponent],
@@ -30,6 +34,7 @@ import { DialogExampleComponent } from './dialog-example/dialog-example.componen
     MatDialogModule,
     MatButtonModule,
     MatSortModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

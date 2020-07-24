@@ -24,16 +24,24 @@
 }
 
 .sort {
-  font-size: 2rem;
+  font-size-adjust: 3rem;
   line-height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
+  margin-top: 3rem;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  height: auto;
+}
+
+@media (max-width: 552px) {
+  .day2 {
+    height: 110vh;
+  }
 }
 
 .instruction {
@@ -41,6 +49,6 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 1.2rem;
+  font-size-adjust: 1.2rem;
   margin-left: 30px;
 }
