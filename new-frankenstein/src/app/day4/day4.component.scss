@@ -1,0 +1,86 @@
+@import "../../main-styles.scss";
+
+.day4 {
+  width: 100%;
+  height: auto;
+  border: 3px ridge rgb(206, 206, 206);
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-top: 9vh;
+}
+
+.header4 mat-toolbar {
+  padding: 0%;
+  margin-top: 0%;
+  border-radius: 8px 8px 0 0;
+  background: linear-gradient(75deg, #1a669c, #7f5a83);
+}
+
+.header4 .day4-title {
+  margin: auto;
+  font-size: 2rem;
+  font-family: "Lato";
+  color: $dark;
+}
+
+.cards {
+  display: grid;
+  grid-template-areas: "example-card example-card example-card";
+  padding: 3%;
+}
+
+.example-card {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+img {
+  margin: 0 auto;
+}
+
+mat-card:nth-of-type(1) > mat-card-header:nth-child(1) > div:nth-child(1) {
+  background-image: url("../../assets/images/download.png");
+  background-size: cover;
+  background-position: center;
+}
+mat-card:nth-of-type(3) > mat-card-header:nth-child(1) > div:nth-child(1) {
+  background-image: url("../../assets/images/download\ \(1\).png");
+  background-size: cover;
+  background-position: center;
+}
+mat-card:nth-of-type(2) > mat-card-header:nth-child(1) > div:nth-child(1) {
+  background-image: url("../../assets/images/download\ \(2\).png");
+  background-size: cover;
+  background-position: center;
+  background-size: 150%;
+}
+
+mat-card:hover {
+  animation: float 0.5s forwards;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0 #8b8b8b;
+  }
+  100% {
+    transform: translateY(-1.7px);
+    box-shadow: 0 2px 3px 2px #8b8b8b;
+  }
+}
+
+@media (max-width: 550px) {
+  .cards {
+    display: grid;
+    grid-template-areas:
+      "example-card"
+      "example-card"
+      "example-card";
+    padding: 5%;
+    grid-gap: 2rem;
+  }
+  //   img {
+  //     margin: 0 auto;
+  //   }
+}
