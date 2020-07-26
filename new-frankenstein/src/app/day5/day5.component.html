@@ -1,0 +1,39 @@
+<div class="day5">
+  <div class="header5">
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <span class="day5-title">Day 5</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+  <mat-carousel
+    timings="250ms ease-in"
+    [autoplay]="true"
+    interval="5000"
+    color="primary"
+    maxWidth="auto"
+    proportion="25"
+    slides="5"
+    [loop]="true"
+    [hideArrows]="false"
+    [hideIndicators]="false"
+    [useKeyboard]="true"
+    [useMouseWheel]="false"
+    orientation="ltr"
+  >
+    <mat-carousel-slide
+      #matCarouselSlide
+      *ngFor="let slide of slides; let i = index"
+      overlayColor="#777"
+      [hideOverlay]="true"
+    >
+      <div class="slide">
+        <div class="reviewer"><img src="{{ slide.image }}" alt="" /></div>
+        <div class="review-content">
+          <div class="review-name">{{ slide.name }}</div>
+          <div class="review">"{{ slide.review }}"</div>
+        </div>
+      </div>
+    </mat-carousel-slide>
+  </mat-carousel>
+</div>
